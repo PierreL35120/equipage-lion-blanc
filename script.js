@@ -5,7 +5,6 @@ const Mor = document.getElementById("Mor");
 const Kathleen = document.getElementById("Kathleen");
 const Joseph = document.getElementById("Joseph");
 const Veronica = document.getElementById("Veronica");
-
 const infoPersonnage = document.getElementById("infoPerso");
 
 
@@ -21,11 +20,7 @@ function AchtInfo()
 }
 
 function colorAcht(){
-    Acht.classList.remove('sepia');
-}
-
-function nbAcht(){
-    Acht.classList.add('sepia');
+    Acht.classList.toggle('sepia');
 }
 
 function LukasInfo()
@@ -39,11 +34,7 @@ function LukasInfo()
 }    
 
 function colorLukas(){
-    Lukas.classList.remove('sepia');
-}
-
-function nbLukas(){
-    Lukas.classList.add('sepia');
+    Lukas.classList.toggle('sepia');
 }
 
 function MorInfo()
@@ -57,11 +48,7 @@ function MorInfo()
 }    
 
 function colorMor(){
-    Mor.classList.remove('sepia');
-}
-
-function nbMor(){
-    Mor.classList.add('sepia');
+    Mor.classList.toggle('sepia');
 }
 
 function PXInfo()
@@ -75,11 +62,7 @@ function PXInfo()
 }    
 
 function colorPX(){
-    PX.classList.remove('sepia');
-}
-
-function nbPX(){
-    PX.classList.add('sepia');
+    PX.classList.toggle('sepia');
 }
 
 function KathleenInfo()
@@ -90,11 +73,7 @@ function KathleenInfo()
 }    
 
 function colorKathleen(){
-    Kathleen.classList.remove('bw');
-}
-
-function nbKathleen(){
-    Kathleen.classList.add('bw');
+    Kathleen.classList.toggle('bw');
 }
 
 function JosephInfo()
@@ -105,11 +84,7 @@ function JosephInfo()
 }    
 
 function colorJoseph(){
-    Joseph.classList.remove('bw');
-}
-
-function nbJoseph(){
-    Joseph.classList.add('bw');
+    Joseph.classList.toggle('bw');
 }
 
 function VeronicaInfo()
@@ -120,31 +95,27 @@ function VeronicaInfo()
 }    
 
 function colorVeronica(){
-    Veronica.classList.remove('bw');
-}
-
-function nbVeronica(){
-    Veronica.classList.add('bw');
+    Veronica.classList.toggle('bw');
 }
 
 Acht.addEventListener('click', AchtInfo)
 Acht.addEventListener('mouseover', colorAcht)
-Acht.addEventListener('mouseleave', nbAcht)
+Acht.addEventListener('mouseleave', colorAcht)
 Lukas.addEventListener('click', LukasInfo)
 Lukas.addEventListener('mouseover', colorLukas)
-Lukas.addEventListener('mouseleave', nbLukas)
+Lukas.addEventListener('mouseleave', colorLukas)
 Mor.addEventListener('click', MorInfo)
-Mor.addEventListener('mouseleave', nbMor)
+Mor.addEventListener('mouseleave', colorMor)
 Mor.addEventListener('mouseover', colorMor)
 PX.addEventListener('click', PXInfo)
 PX.addEventListener('mouseover', colorPX)
-PX.addEventListener('mouseleave', nbPX)
+PX.addEventListener('mouseleave', colorPX)
 Kathleen.addEventListener('click', KathleenInfo)
-Kathleen.addEventListener('mouseleave', nbKathleen)
+Kathleen.addEventListener('mouseleave', colorKathleen)
 Kathleen.addEventListener('mouseover', colorKathleen)
 Joseph.addEventListener('mouseover', colorJoseph)
-Joseph.addEventListener('mouseleave', nbJoseph)
+Joseph.addEventListener('mouseleave', colorJoseph)
 Joseph.addEventListener('click', JosephInfo)
 Veronica.addEventListener('mouseover', colorVeronica)
-Veronica.addEventListener('mouseleave', nbVeronica)
+Veronica.addEventListener('mouseleave', colorVeronica)
 Veronica.addEventListener('click', VeronicaInfo)
