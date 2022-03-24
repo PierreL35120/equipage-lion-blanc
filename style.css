@@ -193,3 +193,10 @@ p{
     grid-column: 3/6;
     margin-left: 1vw;
 }
+
+
+.stop{
+    grid-row: 3;
+    grid-column: 3/7;
+    color: rgb(165, 0, 0);
+}
